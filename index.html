@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NNN Application</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="chrome-shell">
+      <header class="browser-bar">
+        <div class="browser-actions left">
+          <span class="nav-btn">◁</span>
+          <span class="nav-btn">▷</span>
+          <span class="nav-btn">⟳</span>
+        </div>
+
+        <div class="address-bar-wrap">
+          <div class="address-bar">
+            <span class="lock">≡</span>
+            <span class="site-name">app.zite.com</span>
+          </div>
+        </div>
+
+        <div class="browser-actions right">
+          <span class="small-icon">◌</span>
+          <span class="small-icon">＋</span>
+          <span class="small-icon">☰</span>
+        </div>
+      </header>
+
+      <div class="tab-strip">
+        <div class="tab-pill active">Home</div>
+        <div class="tab-pill">Z</div>
+        <div class="tab-pill">Z</div>
+      </div>
+
+      <div class="top-nav">
+        <div class="nav-left">
+          <div class="brand">NNN</div>
+        </div>
+
+        <div class="center-toggle">
+          <button class="toggle-btn active">Desktop</button>
+          <button class="toggle-btn">Mobile</button>
+        </div>
+
+        <div class="nav-right">
+          <div class="page-select">
+            <span class="page-icon">▣</span>
+            <span>Page 7</span>
+            <span class="caret">▾</span>
+          </div>
+          <button class="exit-btn">✕ Exit preview</button>
+        </div>
+      </div>
+
+      <main class="app-area">
+        <div class="wizard-header">
+          <button class="step-back">←</button>
+
+          <div class="progress-steps">
+            <div class="step complete">
+              <span class="step-check">✓</span>
+              <span class="step-label">Start</span>
+            </div>
+            <div class="line"></div>
+            <div class="step complete">
+              <span class="step-check">✓</span>
+              <span class="step-label">Details</span>
+            </div>
+            <div class="line"></div>
+            <div class="step current">
+              <span class="step-dot"></span>
+              <span class="step-label">Last step</span>
+            </div>
+          </div>
+        </div>
+
+        <section class="wizard-panel active" data-step="1">
+          <div class="card payment-card">
+            <h2>PAYMENT METHODS</h2>
+            <p>
+              The following payment methods are available for submitting your tribute.
+              Please use the appropriate link for your selected payment method.
+            </p>
+
+            <div class="payment-list">
+              <p>PayPal: <a href="#">https://www.paypal.me/drippinmami</a></p>
+              <p>Cash App: <a href="#">https://cash.app/$drippinmami18</a></p>
+              <p>Venmo: <a href="#">https://venmo.com/u/princessjade</a></p>
+              <p>YouPay: <a href="#">https://youpay.me/GoodessJade462</a></p>
+              <p>Throne Wishlist: <a href="#">https://thr.one/princessjade24</a></p>
+            </div>
+
+            <p class="notice">
+              Please remember that submitting your application does not guarantee
+              acceptance. Your participation will only be confirmed once your application is
+              approved, your payment is received and verified, and your payment arrangement is
+              agreed upon.
+            </p>
+
+            <h3>PROOF OF PAYMENT</h3>
+            <p>
+              Upload a screenshot of your completed tribute payment so Goddess Jade can verify
+              your transaction.
+            </p>
+
+            <label class="upload-box">
+              <input type="file" class="hidden-input" />
+              <div class="upload-ui">
+                <span class="upload-icon">📎</span>
+                <span>Drag &amp; drop a file or browse</span>
+              </div>
+            </label>
+
+            <button class="primary-btn next-btn">Submit</button>
+          </div>
+        </section>
+
+        <section class="wizard-panel" data-step="2">
+          <div class="card details-card">
+            <div class="info-block">
+              <p>
+                This section, you confirm that you are applying voluntarily and are prepared to
+                meet the stated requirements for No Nut November 2026 under Goddess Jade’s direction.
+              </p>
+            </div>
+
+            <label class="field-label">
+              What is your full name or preferred name for this application? <span>*</span>
+            </label>
+            <input type="text" class="text-input" placeholder="" />
+
+            <label class="field-label">
+              Are you ready to commit to No Nut November 2026 under the stated requirements? <span>*</span>
+            </label>
+
+            <label class="radio-row">
+              <input type="radio" name="commit" />
+              <span>Yes, I confirm and wish to apply.</span>
+            </label>
+
+            <label class="radio-row">
+              <input type="radio" name="commit" />
+              <span>No, I do not wish to apply.</span>
+            </label>
+
+            <label class="field-label signature-label">Final Applicant Signature <span>*</span></label>
+            <button class="signature-btn">
+              <span class="check-mark">✓</span>
+              Add signature
+            </button>
+
+            <label class="field-label date-label">Date</label>
+            <div class="date-wrap">
+              <input type="text" class="text-input date-input" placeholder="MM/DD/YYYY" />
+              <span class="calendar-icon">📅</span>
+            </div>
+
+            <button class="primary-btn next-btn">Next →</button>
+          </div>
+        </section>
+
+        <section class="wizard-panel" data-step="3">
+          <div class="card final-card">
+            <h2>SECTION 6: FINAL CONFIRMATION</h2>
+            <p>
+              Please review your responses before submitting your application. By completing this
+              section, you confirm that you are applying voluntarily and are prepared to meet the
+              stated requirements for No Nut November 2026 under Goddess Jade’s direction.
+            </p>
+
+            <label class="field-label">
+              What is your full name or preferred name for this application? <span>*</span>
+            </label>
+            <input type="text" class="text-input" />
+
+            <label class="field-label">
+              Are you ready to commit to No Nut November 2026 under the stated requirements? <span>*</span>
+            </label>
+
+            <label class="radio-row">
+              <input type="radio" name="confirm-commit" />
+              <span>Yes, I confirm and wish to apply.</span>
+            </label>
+
+            <label class="radio-row">
+              <input type="radio" name="confirm-commit" />
+              <span>No, I do not wish to apply.</span>
+            </label>
+
+            <label class="field-label signature-label">Final Applicant Signature <span>*</span></label>
+            <button class="signature-btn">
+              <span class="check-mark">✓</span>
+              Add signature
+            </button>
+
+            <label class="field-label date-label">Date</label>
+            <div class="date-wrap">
+              <input type="text" class="text-input date-input" placeholder="MM/DD/YYYY" />
+              <span class="calendar-icon">📅</span>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="bottom-bar">
+        <div class="made-by">Made with <b>Fillout</b></div>
+        <button class="hide-branding">Hide branding</button>
+      </footer>
+    </div>
+
+    <div class="help-bubble">?</div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
